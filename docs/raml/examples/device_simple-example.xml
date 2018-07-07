@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<device>
+    <id>http://platform.fiesta-iot.eu/device</id>
+    <qk>BatteryLevel</qk>
+    <uom>Percent</uom>
+    <location>
+        <lat>1.5</lat>
+        <lon>1.2837158</lon>
+    </location>
+    <testbed>http://platform.fiesta-iot.eu/testbed</testbed>
+</device>

@@ -1,0 +1,21 @@
+{
+  "id": "http://platform.fiesta-iot.eu/device",
+  "location": {
+    "lat": 43.47171,
+    "lon": -3.80014
+  },
+  "testbed": "http://platform.fiesta-iot.eu/testbed",
+  "sensing_devices": [
+    {
+      "id": "http://platform.fiesta-iot.eu/sensor_1",
+      "qk": "BatteryLevel",
+      "uom": "Percent"
+    },
+    {
+      "id": "http://platform.fiesta-iot.eu/sensor_2",
+      "type": "AirThermometer",
+      "qk": "AirTemperature",
+      "uom": "DegreeCelsius"
+    }
+  ]
+}

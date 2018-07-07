@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testbed>
+    <id>http://platform.fiesta-iot.eu/testbed</id>
+    <domain_of_interest>SmartCity</domain_of_interest>
+    <devices>
+        <device>
+            <id>http://platform.fiesta-iot.eu/device_1</id>
+            <sensing_devices>
+                <sensing_device>
+                    <id>http://platform.fiesta-iot.eu/sensor_1</id>
+                    <qk>BatteryLevel</qk>
+                    <uom>Percent</uom>
+                </sensing_device>
+                <sensing_device>
+                    <id>http://platform.fiesta-iot.eu/sensor_2</id>
+                    <type>AirThermometer</type>
+                    <qk>AirTemperature</qk>
+                    <uom>DegreeCelsius</uom>
+                </sensing_device>
+            </sensing_devices>
+            <location>
+                <lat>1.5</lat>
+                <lon>1.2837158</lon>
+            </location>
+        </device>
+        <device>
+            <id>http://platform.fiesta-iot.eu/device_2</id>
+            <type>AirThermometer</type>
+            <qk>AirTemperature</qk>
+            <uom>DegreeCelsius</uom>
+            <location>
+                <lat>1.5</lat>
+                <lon>1.2837158</lon>
+            </location>
+        </device>
+    </devices>
+</testbed>

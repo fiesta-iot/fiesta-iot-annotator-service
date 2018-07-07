@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<observation>
+    <observed_by>http://platform.fiesta-iot.eu/device</observed_by>
+    <location>
+        <lat>43.5</lat>
+        <lon>-3.207683</lon>
+    </location>
+    <quantity_kind>AirTemperature</quantity_kind>
+    <value>20.1</value>
+    <format>float</format>
+    <unit>DegreeCelsius</unit>
+    <timestamp>2017-07-27T07:29:00.66Z</timestamp>
+</observation>

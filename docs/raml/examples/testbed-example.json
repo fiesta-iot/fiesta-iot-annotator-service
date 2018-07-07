@@ -1,0 +1,36 @@
+{
+  "id": "http://platform.fiesta-iot.eu/testbed",
+  "domain_of_interest": "SmartCity",
+  "devices": [
+    {
+      "id": "http://platform.fiesta-iot.eu/device_1",
+      "location": {
+        "lat": 43.4711,
+        "lon": -3.8004
+      },
+      "sensing_devices": [
+        {
+          "id": "http://platform.fiesta-iot.eu/sensor_1",
+          "qk": "BatteryLevel",
+          "uom": "Percent"
+        },
+        {
+          "id": "http://platform.fiesta-iot.eu/sensor_2",
+          "type": "AirThermometer",
+          "qk": "AirTemperature",
+          "uom": "DegreeCelsius"
+        }
+      ]
+    },
+    {
+      "id": "http://platform.fiesta-iot.eu/device_2",
+      "location": {
+        "lat": 43.4175,
+        "lon": -3.8024
+      },
+      "type": "AirThermometer",
+      "qk": "AirTemperature",
+      "uom": "DegreeCelsius"
+    }
+  ]
+}

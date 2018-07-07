@@ -1,0 +1,10 @@
+{
+  "id": "http://platform.fiesta-iot.eu/device",
+  "location": {
+    "lat": 43.47171,
+    "lon": -3.80014
+  },
+  "qk": "BatteryLevel",
+  "uom": "Percent",
+  "testbed": "http://platform.fiesta-iot.eu/testbed"
+}

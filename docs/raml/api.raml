@@ -1,0 +1,192 @@
+#%RAML 0.8
+title: Annotator as a Service API documentation
+baseUri: ${annotator-service.api_base_uri}
+protocols: [ HTTP ]
+
+/testbed:
+  post:
+    description: "Semantically annotate a testbed."
+    body:
+      application/json:
+        example: !include examples/testbed-example.json
+      application/xml:
+        example: !include examples/testbed-example.xml
+    responses:
+      200:
+        body:
+          application/ld+json:
+          application/rdf+xml:
+          application/n-triples:
+          application/n-quads:
+          application/turtle:
+          text/plain:
+          text/csv:
+          text/rdf+n3:
+          application/n3:
+          text/n3:
+          text/n-quads:
+          text/nquads:
+          application/rdf+json:
+          null/rdf:
+          application/rdf+thrift:
+          application/x-trig:
+          application/trig:
+          text/trig:
+          application/trix+xml:
+          application/trix:
+          application/x-turtle:
+          text/turtle:
+      400:
+      415:
+      406:
+/device:
+  post:
+    description: "Semantically annotate a device."
+    body:
+      application/json:
+        example: !include examples/device_simple-example.json
+#        example: !include examples/device_complex-example.json
+      application/xml:
+        example: !include examples/device_simple-example.xml
+#        example: !include examples/device_complex-example.xml
+    responses:
+      200:
+        body:
+          application/ld+json:
+          application/rdf+xml:
+          application/n-triples:
+          application/n-quads:
+          application/turtle:
+          text/plain:
+          text/csv:
+          text/rdf+n3:
+          application/n3:
+          text/n3:
+          text/n-quads:
+          text/nquads:
+          application/rdf+json:
+          null/rdf:
+          application/rdf+thrift:
+          application/x-trig:
+          application/trig:
+          text/trig:
+          application/trix+xml:
+          application/trix:
+          application/x-turtle:
+          text/turtle:
+      400:
+      415:
+      406:
+/devices:
+  post:
+    description: "Semantically annotate a set of devices."
+    body:
+      application/json:
+        example: !include examples/devices-example.json
+      application/xml:
+        example: !include examples/devices-example.xml
+    responses:
+      200:
+        body:
+          application/ld+json:
+          application/rdf+xml:
+          application/n-triples:
+          application/n-quads:
+          application/turtle:
+          text/plain:
+          text/csv:
+          text/rdf+n3:
+          application/n3:
+          text/n3:
+          text/n-quads:
+          text/nquads:
+          application/rdf+json:
+          null/rdf:
+          application/rdf+thrift:
+          application/x-trig:
+          application/trig:
+          text/trig:
+          application/trix+xml:
+          application/trix:
+          application/x-turtle:
+          text/turtle:
+      400:
+      415:
+      406:
+/observation:
+  post:
+    description: "Semantically annotate an observation."
+    body:
+      application/json:
+        example: !include examples/observation-example.json
+      application/xml:
+        example: !include examples/observation-example.xml
+    responses:
+      200:
+        description: Response including the annotated document in any RDF representation valid format.
+        body:
+          application/ld+json:
+          application/rdf+xml:
+          application/n-triples:
+          application/n-quads:
+          application/turtle:
+          text/plain:
+          text/csv:
+          text/rdf+n3:
+          application/n3:
+          text/n3:
+          text/n-quads:
+          text/nquads:
+          application/rdf+json:
+          null/rdf:
+          application/rdf+thrift:
+          application/x-trig:
+          application/trig:
+          text/trig:
+          application/trix+xml:
+          application/trix:
+          application/x-turtle:
+          text/turtle:
+      400:
+      415:
+      406:
+/observations:
+  post:
+    description: "Semantically annotate a set of observations."
+    body:
+      application/json:
+        example: !include examples/observations-example.json
+      application/xml:
+        example: !include examples/observations-example.json
+    responses:
+      200:
+        description: Response including the annotated document in any RDF representation valid format.
+        body:
+          application/ld+json:
+          application/rdf+xml:
+          application/n-triples:
+          application/n-quads:
+          application/turtle:
+          text/plain:
+          text/csv:
+          text/rdf+n3:
+          application/n3:
+          text/n3:
+          text/n-quads:
+          text/nquads:
+          application/rdf+json:
+          null/rdf:
+          application/rdf+thrift:
+          application/x-trig:
+          application/trig:
+          text/trig:
+          application/trix+xml:
+          application/trix:
+          application/x-turtle:
+          text/turtle:
+      400:
+      415:
+      406:
+
+
+

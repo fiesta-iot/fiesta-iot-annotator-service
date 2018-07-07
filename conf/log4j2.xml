@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+    </Console>
+    <RollingFile name="DailyRollingFile"
+      fileName="${sys:jboss.server.log.dir}/annotator/annotator.log"
+      filePattern="${sys:jboss.server.log.dir}/annotator/annotator.%d{yyyy-MM-dd}-%i.log.gz"
+      ignoreExceptions="false" bufferedIO="true" immediateFlush="true">
+      <PatternLayout>
+        <!-- <Pattern>%d %p %c{1.} [%t] %m%n</Pattern> -->
+        <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+        <SizeBasedTriggeringPolicy size="250 MB" />
+      </Policies>
+    </RollingFile>
+  </Appenders>
+  <Loggers>
+    <Root level="WARN">
+<!--      <AppenderRef ref="Console" /> -->
+      <AppenderRef ref="DailyRollingFile" />
+    </Root>
+    <Logger name="eu.fiesta_iot.platform.annotator" level="INFO" />
+		<Logger name="eu.fiesta_iot.utils" level="INFO" />
+  </Loggers>
+</Configuration>

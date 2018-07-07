@@ -1,0 +1,26 @@
+[
+  {
+    "observed_by": "http://platform.fiesta-iot.eu/device_1",
+    "location": {
+        "lat": 43.5,
+        "lon": -3.207683
+    },
+    "quantity_kind": "AirTemperature",
+    "value": "20.1",
+    "format": "float",
+    "unit": "DegreeCelsius",
+    "timestamp": "2017-07-27T07:29:00.66Z"
+  },
+  {
+    "observed_by": "http://platform.fiesta-iot.eu/device_2",
+    "location": {
+        "lat": 1.5,
+        "lon": 1.2076837158
+    },
+    "quantity_kind": "AirTemperature",
+    "value": "5.1",
+    "format": "float",
+    "unit": "DegreeCelsius",
+    "timestamp": "2017-07-27T07:29:00.66Z"
+  }
+]
